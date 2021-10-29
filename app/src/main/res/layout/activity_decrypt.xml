@@ -7,7 +7,7 @@
     tools:context=".Decrypt">
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/ET_decrypt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="61dp"
@@ -32,13 +32,13 @@
         android:text="Enter the text to decrypt:"
         android:textColor="@color/purple_700"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
+        app:layout_constraintBottom_toTopOf="@+id/ET_decrypt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/Btn_Ok"
+        android:id="@+id/Btn_d_Ok"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="59dp"
@@ -46,11 +46,11 @@
         android:layout_marginBottom="213dp"
         android:text="ok"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintEnd_toStartOf="@+id/Btn_d_cancel"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/Btn_d_cancel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="229dp"
@@ -59,7 +59,7 @@
         android:text="Cancel"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintTop_toBottomOf="@+id/ET_decrypt" />
 
     <TextView
         android:id="@+id/textView3"
@@ -71,12 +71,12 @@
         android:text="Key Here:"
         android:textColor="@color/purple_700"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/ET_key"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextMultiLine"
+        android:id="@+id/ET_key"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="59dp"
@@ -86,7 +86,7 @@
         android:gravity="start|top"
         android:hint="Type your Key here"
         android:inputType="textMultiLine"
-        app:layout_constraintBottom_toTopOf="@+id/Btn_Ok"
+        app:layout_constraintBottom_toTopOf="@+id/Btn_d_Ok"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 </android.support.constraint.ConstraintLayout>
